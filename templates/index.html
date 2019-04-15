@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="rows vertical-center">
+  <div class="col-sm-6 ">
+    <div class="text-center ">
+      <img src="{% static 'imgs/mt180.jpeg' %}" alt="Logo rouge MT180"/>
+    </div>
+    <div class="text-muted text-center">Edition 2019 | Cameroun</div>
+  </div>
+  <div class="col-sm-6 bg-dark p-5 text-white rounded">
+    <div>
+      <h1>Renseignements</h1>
+      Trouvez ici toutes les information que vous avez besoin sur le concours.<br>
+      <ul>
+        <li><a href="">Information generales</a></li>
+        <li><a href="">Condition de candidature</a></li>
+      </ul>
+    </div>
+    <div>
+      <h1>Inscription</h1>
+      Si apres information, vous voulez deposer votre candidature, faites le ici
+      <br>
+      <a calss="btn btn-outline-warning btn-block " role="button" href="inscription">Deposer ma candidature</a>
+    </div>   
+  </div>
+</div>
+{% endblock %}
