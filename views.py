@@ -19,3 +19,8 @@ def index(request):
 	# else:
 	# 	data = {'universite' : Universite.objects.all, 'formulaire' : CandidatForm()}
 	# 	return render(request, "index.html")
+def info(request):
+	return render (request, "info.html")
+
+def condition(request):
+	return render (request, "condition.html")
