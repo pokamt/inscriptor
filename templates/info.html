@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="rows vertical-center">
+  <div class="col-sm-4 p-0">
+    <div class="text-center ">
+      <a href="{% url 'index' %}">
+        <img src="{% static 'imgs/mt180.jpeg' %}" alt="Logo rouge MT180"/>
+      </a>
+    </div>
+    <div class="text-muted text-center">Edition 2019 | Cameroun</div>
+  </div>
+  <div class="col-sm-8 bg-dark p-3 text-white rounded">
+    <h1>Informations generales Ma thèse en 180 secondes(MT180)</h1>
+    <div class="text-justify">
+      <b>MT180</b> est un concours international de vulgarisation scientifique ouvert aux doctorants francophones du monde entier. Les doctorants doivent présenter leur sujet de recherche, en français et en termes simples, à un auditoire profane et diversifié. Chaque étudiant(e) doit faire, en trois minutes, un exposé clair, concis et néanmoins convaincant sur son projet de recherche.
+      Inspiré du concours de Three minute thesis (3MT), conçu à l’Université du Queensland en Australie, le concept est repris en 2012 au Québec par l'Association francophone pour le savoir (Acfas). C'est cette même association qui a souhaité étendre le projet à l’ensemble des pays francophones. 
+      En 2014, quatre pays francophones participaient ainsi à la première édition internationale de Ma thèse en 180 secondes dont la finale internationale se déroulait au Cœur des sciences de l'UQAM à Montréal : la Belgique, la France, le Maroc et le Québec. 
+      En 2015, le nombre de pays participants est multiplié par deux. Huit pays sont alors représentés lors de la finale internationale qui se déroule à Paris dans le grand amphithéâtre de la Sorbonne le 1er octobre 2015. À la Belgique, la France, le Maroc et le Québec s'ajoutent le Burkina-Faso, le Cameroun, le Sénégal et la Tunisie. Ces nouveaux pays sont portés par l'Agence universitaire de la Francophonie (AUF). 
+      Au fil des années ce concours a pris une véritable envergure internationale et s’impose de plus en plus comme un cadre d’expression du talent des doctorants francophones.
+    </div> 
+  </div>
+</div>
+{% endblock %}

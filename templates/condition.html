@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="rows vertical-center">
+  <div class="col-sm-4 p-0">
+    <div class="text-center ">
+      <a href="{% url 'index' %}">
+        <img src="{% static 'imgs/mt180.jpeg' %}" alt="Logo rouge MT180"/>
+      </a>
+    </div>
+    <div class="text-muted text-center">Edition 2019 | Cameroun</div>
+  </div>
+  <div class="col-sm-8 bg-dark p-3 text-white rounded">
+    <h1>Condition de candidature</h1>
+    <div class="text-justify">
+      Les critères suivants s’appliquent à tous les candidats du concours MT180.<br>
+      Pour prendre part à MT180, quel que soit le niveau de la compétition (internationale, nationale,
+      ou régionale), les participants doivent satisfaire aux conditions d’admissibilité suivantes :
+      <ul>
+        <li>
+          être inscrits ou avoir été inscrits dans un établissement d’enseignement supérieur ou
+          de recherche du territoire dans lequel il participe au concours (par exemple :
+          inscription dans une université canadienne si le lauréat souhaite participer au
+          concours organisé au Canada);
+        </li>
+        <li>
+          être inscrits ou avoir été inscrits dans un établissement d’enseignement supérieur
+          ou de recherche dans un programme de doctorat recherche avec la rédaction d’une
+          thèse (Ph.D.) ou avoir obtenu leur doctorat au cours des douze mois précédant la
+          finale internationale;
+        </li>
+        <li>  
+          présenter un état d’avancement suffisant du projet de recherche doctoral;
+        </li>
+        <li>
+          s'exprimer en français.
+        </li>
+      </ul>
+
+      Pour prendre part à la finale internationale de MT180, les participants doivent satisfaire aux
+      conditions d’admissibilité suivantes :
+      <ul>
+        <li>
+         être inscrit en doctorat dans une université du territoire représenté;
+        </li>
+        <li>
+          représenter le territoire de l’institution dans laquelle ils sont inscrits (ou ont été
+          inscrits) en doctorat;
+        </li>
+        <li>
+          avoir participé à la finale nationale de MT180 du pays de l’institution dans laquelle
+          ils sont inscrits pour effectuer leur doctorat et avoir été sélectionné pour participer
+          à la finale internationale;
+        </li>
+        <li>
+          ne pas avoir remporté de prix du jury ou du public lors d’une finale nationale de
+          MT180 précédente;
+        </li>
+        <li>
+          être disponible et présent à cette finale internationale et aux activités qui y sont
+          reliées pour représenter le territoire où ils ont été sélectionnés.
+        </li>
+      </ul>
+    </div> 
+  </div>
+</div>
+{% endblock %}

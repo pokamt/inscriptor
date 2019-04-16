@@ -2,22 +2,24 @@
 {% load static %}
 {% block content %}
 <div class="rows vertical-center">
-  <div class="col-sm-6 ">
+  <div class="col-sm-4 p-0">
     <div class="text-center ">
-      <img src="{% static 'imgs/mt180.jpeg' %}" alt="Logo rouge MT180"/>
+      <a href="{% url 'index' %}">
+        <img src="{% static 'imgs/mt180.jpeg' %}" alt="Logo rouge MT180"/>
+      </a>
     </div>
     <div class="text-muted text-center">Edition 2019 | Cameroun</div>
   </div>
-  <div class="col-sm-6 bg-dark p-5 text-white rounded">
+  <div class="col-sm-8 bg-dark p-3 text-white rounded">
     <div>
       <h1>Renseignements</h1>
-      Trouvez ici toutes les information que vous avez besoin sur le concours.
+      Trouvez ici toutes les informations que vous avez besoin sur le concours.
       <div class="row">
         <div class="col-sm-6">
-          <a class="btn btn-outline-primary w-100 mb-3" href="">Information generales</a>
+          <a class="btn btn-outline-primary w-100 mb-3" href="{% url 'info' %}">Informations generales</a>
         </div>
         <div class="col-sm-6">
-          <a class="btn btn-outline-secondary w-100 mb-3" href="">Condition de candidature</a>
+          <a class="btn btn-outline-secondary w-100 mb-3" href="{% url 'condition' %}">Condition de candidature</a>
         </div>
       </div>
     </div>
@@ -25,7 +27,7 @@
       <h1>Inscription</h1>
       Si apres information, vous repondez aux conditions et vous voulez deposer votre candidature, faites en cliquant sur le bouton plus bas
       <br><br>
-      <a class="btn btn-outline-warning btn-lg btn-block " role="button" href="inscription">Deposer ma candidature</a>
+      <a class="btn btn-outline-warning btn-lg btn-block " role="button" href="{% url 'index' %}">Deposer ma candidature</a>
     </div>   
   </div>
 </div>
